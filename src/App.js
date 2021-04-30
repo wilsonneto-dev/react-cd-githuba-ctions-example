@@ -11,7 +11,7 @@ function App() {
           Bora fazer um pipeline de deploy com GH Actions?
         </p>
         <p>
-          Deploy automático rolando!!
+          Deploy automático rolando!! v2
         </p>
       </header>
     </div>

@@ -26,7 +26,7 @@ jobs:
     - name: executing npm install and npm run build
       run: |
         npm install yarn
-        yarn install
+        yarn --production
         yarn build
 
     - name: Azure Login - Conectando com Credenciais no Azure

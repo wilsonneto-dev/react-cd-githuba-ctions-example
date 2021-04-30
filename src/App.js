@@ -10,6 +10,9 @@ function App() {
           React + CI/CD + Github Actions + Azure Blob Storage:<br />
           Bora fazer um pipeline de deploy com GH Actions?
         </p>
+        <p>
+          Deploy automático rolando!!
+        </p>
       </header>
     </div>
   );

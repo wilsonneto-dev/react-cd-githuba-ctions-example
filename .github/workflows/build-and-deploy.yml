@@ -23,7 +23,14 @@ jobs:
       with:
         node-version: '14'    
     
-    - name: executing npm install and npm run build
-      run: |
-        npm install
-        npm run build
+    - name: Azure Login - Conectando com Credenciais no Azure
+      uses: Azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Az - uploading files
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+           az storage blob upload-batch --account-name reactghactions --destination '$web' --source ./build/
